@@ -1,0 +1,7 @@
+# Python 3.13 was used for every analysis reported in the manuscript.
+numpy>=2.0
+pandas>=2.0
+scipy>=1.11
+statsmodels>=0.14
+pyreadstat>=1.2
+matplotlib>=3.8

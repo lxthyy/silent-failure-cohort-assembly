@@ -1,0 +1,44 @@
+﻿====================================================================================================
+ANALYSIS A — lossy unit conversion (rounding) as implemented in UNIT_CONVERSIONS
+====================================================================================================
+            label   factor  decimals     n  mean_exact  mean_round  bias_pct  max_abs_dev     rmse  levels_lost_pct  pearson_exact  pearson_round  spearman_exact  spearman_round           partner  threshold  n_flip
+       Creatinine 88.40000         0 19212   77.009781   77.000468 -0.012092      0.50000 0.293218         8.741259       0.314088       0.313877        0.518388        0.518188         Uric acid       88.4     0.0
+        Uric acid 59.48000         0 19208  321.520552  321.534933  0.004473      0.49600 0.286208         0.000000       0.314088       0.314062        0.518388        0.518388        Creatinine      420.0     0.0
+              BUN  0.35700         1 19210    4.549752    4.551843  0.045949      0.05000 0.028682         0.000000       0.543988       0.543957        0.437600        0.437600        Creatinine        NaN     NaN
+Total cholesterol  0.02586         2 22221    4.789714    4.789702 -0.000258      0.00500 0.002900         0.000000       0.928653       0.928647        0.920417        0.920417             LDL-C        5.2   171.0
+            HDL-C  0.02586         2 22222    1.356041    1.356111  0.005164      0.00498 0.002876         0.000000      -0.362748      -0.362669       -0.450165       -0.450165      Triglyceride        1.0     0.0
+     Triglyceride  0.01129         2  9446    1.408607    1.408579 -0.001994      0.00500 0.002876         0.000000      -0.362748      -0.362727       -0.450165       -0.450165             HDL-C        1.7     0.0
+            LDL-C  0.02586         2  9285    2.856353    2.856275 -0.002753      0.00498 0.002891         0.000000       0.928653       0.928647        0.920417        0.920417 Total cholesterol        3.4     0.0
+  Fasting glucose  0.05550         1  9529    5.923135    5.925512  0.040117      0.05000 0.029095        36.395760       0.201959       0.201706        0.329918        0.329563               BMI        7.0    36.0
+
+====================================================================================================
+ANALYSIS B — fasting subsample weight vs examination weight (glucose, cycles E/F/G)
+====================================================================================================
+  pooled participants (E/F/G)            : 30442
+  with LBXGLU (fasting subsample)        : 9529 (31.3%)
+  with WTSAF2YR > 0                      : 8827 (29.0%)
+  PHAFSTHR >= 8 h among LBXGLU non-missing: 8846
+
+  -- all ages --
+  LBXGLU, WTMEC2YR on fasting subsample (as in _p3_weighted.R) mean= 104.417  SE= 0.503  n=  9529  sumW=   349500556
+  LBXGLU, WTSAF2YR on fasting subsample (design-correct) mean= 103.670  SE= 0.482  n=  8827  sumW=   758655682
+  difference: +0.747 mg/dL (+0.72%)
+
+  -- adults >= 20 y --
+  LBXGLU, WTMEC2YR, age>=20                            mean= 105.802  SE= 0.579  n=  7811  sumW=   303040188
+  LBXGLU, WTSAF2YR, age>=20                            mean= 104.981  SE= 0.554  n=  7230  sumW=   653616638
+  difference: +0.822 mg/dL (+0.78%)
+
+  -- 8-hour fasted only --
+  LBXGLU, WTSAF2YR, age>=20 & fasted>=8h               mean= 104.981  SE= 0.554  n=  7230  sumW=   653616638
+  LBXGLU, WTMEC2YR, age>=20 & fasted>=8h               mean= 105.270  SE= 0.592  n=  7246  sumW=   283050007
+
+  -- per cycle (adults >= 20) --
+  2007-2008: WTMEC  107.48 (SE 0.78)  WTSAF  106.25 (SE 0.69)  diff  +1.23 mg/dL   n=2601
+  2009-2010: WTMEC  103.94 (SE 0.79)  WTSAF  103.73 (SE 0.84)  diff  +0.21 mg/dL   n=2762
+  2011-2012: WTMEC  105.97 (SE 1.26)  WTSAF  104.98 (SE 1.21)  diff  +1.00 mg/dL   n=2448
+
+  -- SI value already supplied by CDC (LBDGLUSI) vs tool re-derivation --
+  n=9529  CDC LBDGLUSI vs tool round(LBXGLU*0.0555,1): identical 7/9529 (0.07%), max |diff| 0.054 mmol/L
+
+[saved] A_rounding.csv

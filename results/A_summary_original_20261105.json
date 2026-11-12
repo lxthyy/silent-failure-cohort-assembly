@@ -1,0 +1,436 @@
+{
+  "generated": "2026-11-05T02:34:17",
+  "n_modules": 286,
+  "n_files_in_cache": 541,
+  "n_duplicate_copies_excluded": 255,
+  "n_failed": 0,
+  "n_total_rows": 2279734,
+  "per_check": {
+    "C1_missing_code": {
+      "modules_hit": 133,
+      "rate_pct": 46.5,
+      "total_count": 45637
+    },
+    "C2_parser_encoding": {
+      "modules_hit": 183,
+      "rate_pct": 63.99,
+      "total_count": 2077656
+    },
+    "C3_row_inflation": {
+      "modules_hit": 0,
+      "rate_pct": 0.0,
+      "total_count": 0
+    },
+    "C4_id_drift": {
+      "modules_hit": 0,
+      "rate_pct": 0.0,
+      "total_count": 0
+    },
+    "C7_analyte_dup": {
+      "modules_hit": 6,
+      "rate_pct": 2.1,
+      "total_count": 8
+    },
+    "C8_weight_mismatch": {
+      "modules_hit": 0,
+      "rate_pct": 0.0,
+      "total_count": 0
+    },
+    "C9_shortname_collision": {
+      "modules_hit": 0,
+      "rate_pct": 0.0,
+      "total_count": 0
+    },
+    "C10_unit_drift": {
+      "modules_hit": 0,
+      "rate_pct": 0.0,
+      "total_count": 0
+    }
+  },
+  "union": {
+    "modules_any_check": 225,
+    "rate_any_check_pct": 78.67,
+    "modules_value_layer_C1_or_C2": 224,
+    "rate_value_layer_pct": 78.32,
+    "modules_C1_and_C2": 92,
+    "modules_only_C1": 41,
+    "modules_only_C2": 91
+  },
+  "C2_special_missing_in_measurement_columns": 701182,
+  "anchor_age_loss": {
+    "cycles": [
+      "DEMO_E.xpt",
+      "DEMO_F.xpt",
+      "DEMO_G.xpt"
+    ],
+    "n": 30442,
+    "special_missing": 1303,
+    "sentinel_77": 161,
+    "pct": 4.81,
+    "lost": 1464
+  },
+  "anchor_weight_special_missing": {
+    "modules_with_subsample_weight": 55,
+    "weight_special_missing_total": 97597,
+    "by_weight": {
+      "WTSAF2YR": 9931,
+      "WTPH2YR": 7767,
+      "WTMEC2YR": 7623,
+      "WTDRD1": 7549,
+      "WTDR2D": 7009,
+      "WTMEC4YR": 1245,
+      "WTMREP25": 991,
+      "WTMREP48": 957,
+      "WTMREP34": 951,
+      "WTMREP18": 942,
+      "WTMREP02": 929,
+      "WTMREP52": 919,
+      "WTMREP24": 915,
+      "WTMREP28": 897,
+      "WTMREP15": 893,
+      "WTMREP17": 893,
+      "WTMREP41": 892,
+      "WTMREP04": 887,
+      "WTMREP30": 884,
+      "WTMREP32": 878,
+      "WTMREP37": 876,
+      "WTMREP27": 874,
+      "WTMREP31": 867,
+      "WTMREP12": 866,
+      "WTMREP47": 866,
+      "WTMREP09": 865,
+      "WTMREP43": 864,
+      "WTMREP46": 860,
+      "WTMREP03": 857,
+      "WTMREP08": 853
+    }
+  },
+  "top_columns": {
+    "C1_by_column": [
+      {
+        "col": "LBXSGL",
+        "n": 5094
+      },
+      {
+        "col": "LBDSTPSI",
+        "n": 3466
+      },
+      {
+        "col": "LBXSCLSI",
+        "n": 2585
+      },
+      {
+        "col": "LBXSIR",
+        "n": 2297
+      },
+      {
+        "col": "BPXPLS",
+        "n": 2187
+      },
+      {
+        "col": "LBXSAPSI",
+        "n": 1928
+      },
+      {
+        "col": "LBXGLU",
+        "n": 1601
+      },
+      {
+        "col": "LBXSTR",
+        "n": 1517
+      },
+      {
+        "col": "BPXDI2",
+        "n": 991
+      },
+      {
+        "col": "BPXDI3",
+        "n": 987
+      },
+      {
+        "col": "DR1TFF",
+        "n": 977
+      },
+      {
+        "col": "BPXDI1",
+        "n": 972
+      },
+      {
+        "col": "DR1TFA",
+        "n": 935
+      },
+      {
+        "col": "LBXMCVSI",
+        "n": 899
+      },
+      {
+        "col": "LBDLDL",
+        "n": 761
+      },
+      {
+        "col": "DR1TCHOL",
+        "n": 723
+      },
+      {
+        "col": "BMXWAIST",
+        "n": 716
+      },
+      {
+        "col": "LBXSCK",
+        "n": 685
+      },
+      {
+        "col": "BPXDAR",
+        "n": 658
+      },
+      {
+        "col": "BPXCHR",
+        "n": 623
+      }
+    ],
+    "C1_by_column_and_code": [
+      {
+        "col": "LBDSTPSI",
+        "code": 77,
+        "n": 3466
+      },
+      {
+        "col": "LBXSGL",
+        "code": 88,
+        "n": 2759
+      },
+      {
+        "col": "LBXSCLSI",
+        "code": 99,
+        "n": 2585
+      },
+      {
+        "col": "BPXPLS",
+        "code": 88,
+        "n": 2187
+      },
+      {
+        "col": "LBXSGL",
+        "code": 99,
+        "n": 1364
+      },
+      {
+        "col": "BPXDI2",
+        "code": 88,
+        "n": 991
+      },
+      {
+        "col": "BPXDI3",
+        "code": 88,
+        "n": 987
+      },
+      {
+        "col": "LBXGLU",
+        "code": 99,
+        "n": 979
+      },
+      {
+        "col": "BPXDI1",
+        "code": 88,
+        "n": 972
+      },
+      {
+        "col": "LBXSGL",
+        "code": 77,
+        "n": 971
+      },
+      {
+        "col": "LBXSAPSI",
+        "code": 77,
+        "n": 881
+      },
+      {
+        "col": "LBXSIR",
+        "code": 77,
+        "n": 853
+      },
+      {
+        "col": "LBXSIR",
+        "code": 88,
+        "n": 783
+      },
+      {
+        "col": "LBXMCVSI",
+        "code": 88,
+        "n": 761
+      },
+      {
+        "col": "LBXSIR",
+        "code": 99,
+        "n": 661
+      },
+      {
+        "col": "BPXCHR",
+        "code": 88,
+        "n": 623
+      },
+      {
+        "col": "LBXSAPSI",
+        "code": 88,
+        "n": 617
+      },
+      {
+        "col": "RIDAGEYR",
+        "code": 77,
+        "n": 578
+      },
+      {
+        "col": "LBXGLU",
+        "code": 88,
+        "n": 570
+      },
+      {
+        "col": "LBXSTR",
+        "code": 77,
+        "n": 548
+      }
+    ],
+    "C2_by_column": [
+      {
+        "col": "LBDBANO",
+        "n": 65251
+      },
+      {
+        "col": "DR1TALCO",
+        "n": 65138
+      },
+      {
+        "col": "DR1TATOA",
+        "n": 65089
+      },
+      {
+        "col": "LBDVD3LC",
+        "n": 54595
+      },
+      {
+        "col": "LBDVIDLC",
+        "n": 54585
+      },
+      {
+        "col": "DR1TB12A",
+        "n": 50384
+      },
+      {
+        "col": "LBDVE3LC",
+        "n": 46639
+      },
+      {
+        "col": "LBDTHGLC",
+        "n": 45507
+      },
+      {
+        "col": "DR1BWATZ",
+        "n": 42098
+      },
+      {
+        "col": "LBDBPBLC",
+        "n": 41263
+      },
+      {
+        "col": "DPQ090",
+        "n": 40234
+      },
+      {
+        "col": "DR1TP184",
+        "n": 39442
+      },
+      {
+        "col": "DR1TTHEO",
+        "n": 38347
+      },
+      {
+        "col": "DR1_330Z",
+        "n": 37688
+      },
+      {
+        "col": "DPQ080",
+        "n": 37148
+      },
+      {
+        "col": "DPQ070",
+        "n": 34287
+      },
+      {
+        "col": "DPQ060",
+        "n": 34189
+      },
+      {
+        "col": "LBDBSELC",
+        "n": 33221
+      },
+      {
+        "col": "LBDBMNLC",
+        "n": 33221
+      },
+      {
+        "col": "LBDBCDLC",
+        "n": 31635
+      }
+    ]
+  },
+  "cross_module_notes": {
+    "C4_modules_without_seqn": [
+      "DRXFMT.xpt",
+      "DRXFMT_B.xpt"
+    ],
+    "C10_columns_checked": 285,
+    "C10_modules_flagged": 0,
+    "C7_modules_with_incomplete_lbx_lbd_pair": 6,
+    "C7_modules_with_standard_dual_unit_pair": 71,
+    "C3_documented_event_level_modules": 11,
+    "C2_modules_second_reader_failed": 0
+  },
+  "adjudication": {
+    "C1_missing_code": {
+      "tier": "observed_value_corruption",
+      "definition": "仅连续测量列（BMX/BPX/LBX/LBD/URX/DR1T/WT/INDF + 年龄），且哨兵码落在该列非哨兵分布的 p1–p99 之间，才计为碰撞",
+      "false_positive_control": "问卷编码前缀（DIQ/SMQ/PAQ/RXQ 等）整列排除；77=拒答、99=不知道这类码因落在分布之外而自动不计"
+    },
+    "C2_parser_encoding": {
+      "tier": "observed_value_corruption",
+      "definition": "SAS 特殊缺失被读取器物化成 5.3976e-79（pandas）或 0.0（pyreadstat）",
+      "false_positive_control": "以两读取器逐单元格比对，只统计特殊缺失位置"
+    },
+    "C3_row_inflation": {
+      "tier": "structural_hazard",
+      "definition": "行数/唯一 SEQN > 1.05；命中为事件级文件，不是数据错误",
+      "false_positive_control": "逐模块核对是否为一对多事件表"
+    },
+    "C4_id_drift": {
+      "tier": "observed_value_corruption",
+      "definition": "SEQN 的 dtype/小数/位数跨模块不一致",
+      "false_positive_control": "全库含 SEQN 的模块逐一比对，无 SEQN 的格式文件单列登记"
+    },
+    "C7_analyte_dup": {
+      "tier": "naming_hazard",
+      "definition": "跨周期 LBX/LBD 常规单位列与 SI 单位列曾成对出现、本周期只剩一半（格式切换导致变量消失的风险）",
+      "false_positive_control": "从未成对出现过的分析物不判；规范配对单列统计不并入 hit"
+    },
+    "C8_weight_mismatch": {
+      "tier": "structural_hazard",
+      "definition": "同一模块同时含全样本与子样本权重",
+      "false_positive_control": "另记子样本权重的特殊缺失数，避免把'权重存在'当成缺陷"
+    },
+    "C9_shortname_collision": {
+      "tier": "observed_value_corruption",
+      "definition": "短名近空而长名近满，且两列在交集上数值相同（确为同一变量）",
+      "false_positive_control": "LBXTO5/LBXTO5IN 这类解释码被显式排除"
+    },
+    "C10_unit_drift": {
+      "tier": "naming_hazard",
+      "definition": "同名变量跨 ≥3 个周期的跨度或中位数偏离中位值 10 倍以上",
+      "false_positive_control": "要求跨度与中位数同时漂移，且至少 3 个周期"
+    },
+    "not_covered": {
+      "C5_threshold_unit": "需指南元数据，无法从数据本身判定",
+      "C6_constant_unconverted": "需外部阈值定义",
+      "C11_denominator": "验证脚本层，由任务 B 覆盖",
+      "C12_self_referential": "验证脚本层，由任务 B 覆盖"
+    }
+  }
+}
